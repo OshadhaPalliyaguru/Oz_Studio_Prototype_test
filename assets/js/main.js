@@ -309,8 +309,7 @@ function startWebsite() {
   setTimeout(() => {
     intro.style.display = 'none';
     content.style.display = 'block';
-    body.style.backgroundColor = "#f8f8f8";
-    body.style.color = "#222";
+    
 
     // 🔧 Fix layout not updating
     content.offsetHeight;

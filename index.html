@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+     <!--========== SweertAlert2 CDN ==========-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--========== JS word Typing ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <title>Oz Studios</title>
+    <!--========== Fav Icon ==========-->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="logos/oz studios logo4.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/services_logos/oz studios logo4.png">
+
+
+
+     <!--========== Gmail Connected ==========-->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mvWd6lGac7-wv9iRh",
+      });
+   })();
+</script>
+
+
+</head>
+
+<body>
+
+
+ <!-- Intro Animation -->
+    <div class="intro" id="introScreen">
+        <center><h1>Hi, welcome to Oz Studios</h1>
+        <button onclick="startWebsite()">Get Started</button>
+        </center>
+    </div>
+
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    
+<div class="main-content" id="mainContent">
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo"><img src="logos/oz studios logo nav.png" alt="" width="60" height="60"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Services info</a></li>
+                    <li class="nav__item"><a href="#packages" class="nav__link">Packages</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+
+                <div class="about__data">
+                    <h1>Modern <span id="typed-text" class="text-danger"></span></h1>
+                    <h2 class="home__subtitle ">Creative Solutions <br>for Your Digital Needs</h2>
+                    <p class="about__description">We build websites, design visuals, edit content, and bring your
+                        creative vision to life — all under one roof at Oz Studios.</p>
+                    <a href="#services" class="button">Let's Work Together</a>
+                </div>
+
+
+                <img src="logos/oz_dev_works_logo1.png" alt="" class="home__img">
+            </div>
+
+
+
+
+            <!-- Testimonials -->
+
+            <section class="testimonial-section">
+                
+                    <div class="testimonial-track">
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Service was top-notch. Very professional and friendly team!"</p>
+                            <div class="stars">⭐⭐⭐⭐✰</div>
+                            <p class="client">— Kavindu Jayasuriya</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Delivered on time, and the quality was excellent."</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="client">— Tharindu Gunasekara</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Highly satisfied with the support and attention to detail."</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="client">— Isuru Bandara</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"They handled everything smoothly from start to finish."</p>
+                            <div class="stars">⭐⭐⭐⭐✰</div>
+                            <p class="client">— Ravindu Samarasinghe</p>
+                        </div>
+
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Great communication and outstanding results."</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="client">— Dilan Jayawardena</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Very reliable and responsive throughout the project."</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="client">— Sajini Fernando</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Exceeded my expectations in every way."</p>
+                            <div class="stars">⭐⭐⭐⭐✰</div>
+                            <p class="client">— Sanduni Madushani</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Affordable, efficient, and trustworthy!"</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="client">—Sajith Fernando</p>
+                        </div>
+
+                        <div class="testimonial card">
+                            <p class="review-text">"Honestly, one of the best teams we’ve worked with."</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="client">—Nimasha Dilhani</p>
+                        </div>
+
+                        <!-- Add rest of testimonials here -->
+
+                    </div>
+                
+            </section>
+
+
+
+
+            </div>
+            </div>
+
+        </section>
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About us</span>
+                    <h2 class="section-title about__initial">Your Vision, Our Creation</h2>
+                    <p class="about__description">Oz Studios is a creative digital agency founded by Oshadha
+                        Palliyaguru. We offer a range of services including web development, graphic design,
+                        typesetting, video editing, and photo editing. With real client experience and a passion for
+                        quality, we help individuals and businesses turn their ideas into professional digital
+                        creations.</p>
+                    <a href="#packages" class="button"> Design to Deployment</a>
+                </div>
+
+                <img src="logos/oz+studio logo1.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Offering</span>
+            <h2 class="section-title">Our amazing services</h2>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <div class="icon-loop" id="graphic-icon"></div>
+                    <h3 class="services__title">Graphic Design</h3>
+                    <p class="services__description">We craft stunning designs to help you stand out. From branding to
+                        creative visuals, our designs speak louder than words.</p>
+
+                    <a href="#" class="service__button"  onclick="openWhatsApp('Can I get details of this service: Graphic Design Service')">Click For More</a>
+                </div>
+
+
+
+                <div class="services__content">
+                    <div class="icon-loop" id="webdev-icon"></div>
+                    <h3 class="services__title">Web Development</h3>
+                    <p class="services__description">We develop high-performance websites and apps tailored to your
+                        business needs—responsive, secure, and ready to scale.</p>
+                    <a href="#" class="service__button"  onclick="openWhatsApp('Can I get details of this service: Web Development Service')">Click For More</a>
+                </div>
+
+
+
+                <div class="services__content">
+                    <div class="icon-loop" id="typeset-icon"></div>
+                    <h3 class="services__title">Type Settings</h3>
+                    <p class="services__description">From elegant typography to polished layouts, we deliver print and
+                        digital content with professional precision and readability.</p>
+                    <a href="#" class="service__button"  onclick="openWhatsApp('Can I get details of this service: Type Settings Service')">Click For More</a>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!--========== MENU ==========-->
+        <section class="menu section bd-container" id="menu">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">What We Offer Under Our Services</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="Services/design-tool.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Graphic Design</h3>
+                    <span class="menu__detail">Logo Design</span>
+                    <span class="menu__detail">Business Cards, Flyers & Posters</span>
+                    <span class="menu__detail">Banners (Web & Print)</span>
+                    <span class="menu__detail">Social Media Post</span>
+
+                    <span class="menu__preci"></span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Graphic Design Service')"><i '>See More</i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="Services/web-development.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Web Development</h3>
+                    <span class="menu__detail">Static  Website Design </span>
+                    <span class="menu__detail">Dynamic Website Design </span>
+                    <span class="menu__detail">Custom Landing Pages </span>
+                     <span class="menu__detail">One-Page Sites</span>
+                     <span class="menu__detail">.</span>
+                    <span class="menu__detail">.</span>
+ 
+                    <span class="menu__preci"></span>
+                      <a href="#" class="button menu__button" onclick="openWhatsApp('Can I get details of this service: Web Development Service')"><i '>See More</i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="Services/keyboard-and-mouse.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Type Settings</h3>
+
+
+                    <span class="menu__detail">English Paper Typing</span>
+                    <span class="menu__detail">Sinhala Typing</span>
+                    <span class="menu__detail">Resume / CV Formatting</span>
+                    <span class="menu__detail">Presentation Slide Design</span>
+
+
+                    <span class="menu__preci"></span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Type Settings Service')"><i '>See More</i></a>
+                </div>
+
+                  <div class="menu__content">
+                    <img src="Services/photo.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Photo Editing</h3>
+                 
+                     <span class="menu__detail">Background Removal / Change</span>
+                    <span class="menu__detail">Color Correction & Enhancement</span>
+                    <span class="menu__detail">Creative Manipulation & Effects</span>
+                    <span class="menu__detail">Old Photo Restoration</span>
+                    <span class="menu__detail">.</span>
+                    <span class="menu__detail">.</span>
+          
+                    
+
+                    <span class="menu__preci"></span>
+                      <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Photo Editing Service')"><i '>See More</i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="Services/film-editing.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Video Editing</h3>
+                    <span class="menu__detail">YouTube/Instagram Reels Editing</span>
+                    <span class="menu__detail">Intro/Outro Creation</span>
+                    <span class="menu__detail">Event & Promo Video Editing</span>
+                    <span class="menu__detail">Captions & Subtitles</span>
+                    <span class="menu__detail">.</span>
+                    <span class="menu__detail">.</span>
+
+
+                    <span class="menu__preci"></span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp(' Can I get details of this service: Video Editing Service')"><i '>See More</i></a>
+                </div>
+
+                  <div class="menu__content">
+                    <img src="Services/designer.png" alt="" class="menu__img">
+                    <h3 class="menu__name">UI/UX Design</h3>
+                    <span class="menu__detail">Website Wireframes</span>
+                     <span class="menu__detail">Figma Prototypes</span>
+                    <span class="menu__detail">Mobile App UI Design</span>
+                   
+
+                    <span class="menu__preci"></span>
+                     <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: UI/UX Design Service')"><i '>See More</i></a>
+                </div>
+
+        </section>
+
+
+
+        <!--========== Packages ==========-->
+        <section class="menu section bd-container" id="packages">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">Social Media Content Packages</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="Stars/s1.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Starter Boost</h3>
+                    <span class="menu__detail">6 Custom Posts</span>
+                    <span class="menu__detail">1 Short Reel </span>
+
+                    <span class="menu__preci">$49.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Social Media Content - Starter Boost Package')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="Stars/s2.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Growth Pack</h3>
+                    <span class="menu__detail">15 Posts</span>
+                    <span class="menu__detail"> 3 Videos</span>
+
+                    <span class="menu__preci">$129.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Social Media Content - Growth Pack Package')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="Stars/s3.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Content King </h3>
+                    <span class="menu__detail">30 Branded Posts</span>
+                    <span class="menu__detail">5 Videos</span>
+
+                    <span class="menu__preci">$229.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Social Media Content - Content King Package')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+
+
+        </section>
+
+        <section class="menu section bd-container" id="packages">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title"> Web Development Packages</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="badges/sbadge.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Starter Site</h3>
+                    <span class="menu__detail">1-Page static site,</span>
+                    <span class="menu__detail">Contact form,</span>
+                    <span class="menu__detail">Mobile-friendly,</span>
+                    <span class="menu__detail">Fast loading</span>
+                    <span class="menu__preci">$89.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp(' Can I get details of this service: Web Development Packages - Content King Package')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="badges/d badege.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Business Site</h3>
+                    <span class="menu__detail">Up to 3 pages</span>
+                    <span class="menu__detail">Responsive Design</span>
+                    <span class="menu__detail">Custom Layout</span>
+
+                    <span class="menu__preci">$149.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp(' Can I get details of this service: Web Development Packages - Business Site')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="badges/gbadge.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Pro Web Package</h3>
+                    <span class="menu__detail">4–5 pages,</span>
+                    <span class="menu__detail">Basic SEO</span>
+                    <span class="menu__detail">Blog or Portfolio section</span>
+                    <span class="menu__detail"> Hosting support</span>
+                    <span class="menu__preci">$279.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Web Development Packages - Pro Web Package')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+
+
+        </section>
+
+        <section class="menu section bd-container" id="packages">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">Document & Typing Services Packages </h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="batches/g1.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Basic Typing</h3>
+                    <span class="menu__detail"> English/Sinhala typing </span>
+                    <span class="menu__detail">up to 5 pages</span>
+
+
+                    <span class="menu__preci">$10.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp(' Can I get details of this service: Document & Typing Services Packages - Basic Typing')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="batches/s1.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Standard Typing</h3>
+                    <span class="menu__detail">Papers,</span>
+                    <span class="menu__detail">Certificates</span>
+                    <span class="menu__detail">Resumes</span>
+                    <span class="menu__detail">formatted & branded</span>
+                    <span class="menu__detail">up to 15 pages</span>
+                    <span class="menu__preci">$18.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service: Document & Typing Services Packages - Standard Typing')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="batches/s2.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Premium Typing</h3>
+                    <span class="menu__detail">PDF-ready layout</span>
+                    <span class="menu__detail">cover,</span>
+                    <span class="menu__detail">content typesetting</span>
+                    <span class="menu__detail">up to 30 pages</span>
+                    <span class="menu__preci">$60.00</span>
+                    <a href="#" class="button menu__button"  onclick="openWhatsApp('Can I get details of this service : Document & Typing Services Packages -Premium Typing')"><i class='bx bx-cart-alt'>  Select</i></a>
+                </div>
+
+
+        </section>
+
+
+
+        <!--===== APP =======-->
+        <section class="app section bd-container">
+            <div class="app__container bd-grid">
+                <div class="app__data">
+                    <span class="section-subtitle app__initial">Info</span>
+                    <h2 class="section-title app__initial">Why Choose Us</h2>
+                    <p class="app__description">At Oz Studios, we combine creativity, technical skill, and real-world
+                        experience to deliver designs and websites that truly stand out. Whether you're a startup or an
+                        individual, we provide professional solutions that are modern, responsive, and tailored to your
+                        needs. We value clear communication, fast delivery, and quality work — making your vision come
+                        to life, pixel by pixel.</p>
+
+
+                </div>
+
+                <img src="logos/oz_graphics_logo1.png" alt="" class="app__img">
+            </div>
+        </section>
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Contact us</span>
+                    <h2 class="section-title contact__initial">Let’s Connect</h2>
+                    <p class="contact__description">Ready to start your project?<br>
+                        Reach out via email or fill the contact form below — we usually reply within 12 hours.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a href="#" class="button"  onclick="openWhatsApp('Can i Know The Details Of Your Services')">Contact us now</a>
+                </div>
+
+                <form class="form-container" id="Form">
+
+                    <label for="phone">Your Name</label>
+                    <input type="text" id="name"  placeholder="Enter your Name" required>
+
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email"   placeholder="Enter your email" required>
+
+                  
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Type your message..." required></textarea>
+
+                
+
+                   <button type="button" onclick="sendMail()">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Oz Studios</a>
+                <span class="footer__description">Next Level Creations</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Delivery</a></li>
+                    <li><a href="#" class="footer__link">Pricing</a></li>
+                    <li><a href="#" class="footer__link">Creativity</a></li>
+                    <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Event</a></li>
+                    <li><a href="#" class="footer__link">Contact us</a></li>
+                    <li><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Adress</h3>
+                <ul>
+                    <li>Veyangoda</li>
+                    <li>Sri Lanka</li>
+                    <li>+94 71 469 5753</li>
+                    <li>oz.dev.info@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2025 Oz Studios. All right reserved</p>
+    </footer>
+
+</div>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

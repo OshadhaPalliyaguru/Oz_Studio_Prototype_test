@@ -140,6 +140,10 @@ sr.reveal(`.home__data, .home__img,
     ],
     'photo-icon': [
       'icons/photoshop.png', 'icons/lightroom.png'
+    ],
+
+    'all-icon': [
+      'icons/photoshop.png', 'icons/lightroom.png' , 'icons/photoshop.png', 'icons/illustrator.png', 'icons/indesign.png', 'icons/lightroom.png', 'icons/figma.png', 'icons/xd.png', 'icons/canva.png', 'icons/coreldraw.png','icons/premiere.png',  'icons/aftereffects.png','icons/html.png', 'icons/css.png', 'icons/js.png', 'icons/php.png', 'icons/angular.png', 'icons/react.png',  'icons/mysql.png' 
     ]
   };
 
@@ -309,11 +313,39 @@ function startWebsite() {
   setTimeout(() => {
     intro.style.display = 'none';
     content.style.display = 'block';
-    
+     document.body.classList.remove('no-scroll');
 
     // 🔧 Fix layout not updating
     content.offsetHeight;
     window.dispatchEvent(new Event('resize'));
   }, 1000);
 }
+
+
+
+      // Ano Scroll in the a
+
+
+  window.addEventListener('DOMContentLoaded', () => {
+    // Initially disable scrolling
+    document.body.classList.add('no-scroll');
+
+    const intro = document.querySelector('.intro');
+    const button = intro.querySelector('button');
+    const mainContent = document.querySelector('.main-content');
+
+    button.addEventListener('click', () => {
+      // Fade out intro
+      intro.classList.add('fade-out');
+
+      // Allow time for fade animation
+      setTimeout(() => {
+        intro.style.display = 'none';
+        mainContent.style.display = 'block';
+        document.body.classList.remove('no-scroll'); // Re-enable scrolling
+      }, 1000); // Match transition time of .intro
+    });
+  });
+
+
 

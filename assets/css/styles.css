@@ -742,15 +742,27 @@ img{
 
 /* INtro Animation*/
 
+  
+
     .intro {
-      position: fixed;
+      position: relative;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      background: black;
+      height: 100vh;
+      background: linear-gradient(to bottom,
+    white 0%,
+
+   
+    black 51%,
+
+
+    white 100%);
+
+    
       color: white;
       display: flex;
+      
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -759,25 +771,36 @@ img{
     }
 
     .intro h1 {
-      font-size: 2rem;
+      font-size: 4rem;
       opacity: 0;
       animation: fadeIn 2s forwards;
     }
 
     .intro button {
       margin-top: 20px;
-      padding: 10px 20px;
+       padding: .55rem 1rem;
       font-size: 1rem;
-      background-color: white;
-      color: black;
+      background-color: var(--first-color);
+      color: #FFF;
       border: none;
       cursor: pointer;
       opacity: 0;
-      animation: fadeIn 2s forwards;
+      animation: fadeIn2 2s forwards;
       animation-delay: 2s;
+ border-radius: .5rem;
+
+
+
+        
+  
+  
+ 
+ 
     }
 
-    @keyframes fadeIn {
+    
+
+    @keyframes fadeIn2 {
       to {
         opacity: 1;
       }
@@ -792,15 +815,23 @@ img{
       padding: 20px;
       display: none;
       opacity: 0;
-      animation: fadeInMain 1s forwards;
+      animation: fadeInMain2 1s forwards;
       animation-delay: 1s;
     }
 
-    @keyframes fadeInMain {
+    @keyframes fadeInMain2 {
       to {
         opacity: 1;
       }
     }
 
 
+  
+
     /* INtro Animation*/
+
+  /*========== body no scrool while in the intro animation ==========*/
+
+    body.no-scroll {
+  overflow: hidden;
+}

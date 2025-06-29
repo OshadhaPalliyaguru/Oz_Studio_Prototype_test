@@ -316,3 +316,4 @@ function startWebsite() {
     window.dispatchEvent(new Event('resize'));
   }, 1000);
 }
+

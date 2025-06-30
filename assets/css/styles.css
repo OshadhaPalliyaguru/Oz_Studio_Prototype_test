@@ -766,7 +766,7 @@ img{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      z-index: 1000;
+     
       transition: opacity 1s ease;
     }
 

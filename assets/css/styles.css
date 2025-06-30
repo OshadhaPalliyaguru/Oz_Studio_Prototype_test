@@ -750,10 +750,10 @@ img{
       left: 0;
       width: 100%;
       height: 100vh;
-      background: white;
+      background: var(--body-color);
 
     
-      color:black;
+      color:var(--text-color);
       display: flex;
       
       flex-direction: column;
